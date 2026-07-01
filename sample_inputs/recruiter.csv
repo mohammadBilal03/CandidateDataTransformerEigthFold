@@ -1,0 +1,4 @@
+name,email,phone,current_company,title
+Jane Doe,jane.doe@example.com,(415) 555-0142,Acme Corp,Senior Backend Engineer
+John Smith,,212-555-9981,,Product Manager
+,broken@,,,

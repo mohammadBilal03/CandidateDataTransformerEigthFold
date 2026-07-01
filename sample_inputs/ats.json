@@ -1,0 +1,29 @@
+{
+  "candidates": [
+    {
+      "id": "ats-001",
+      "contact": {
+        "fullName": "Jane A. Doe",
+        "emailAddr": "Jane.Doe@example.com",
+        "mobileNo": "+14155550142"
+      },
+      "resumeHeadline": "Senior Backend Engineer @ Acme Corp",
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "United States",
+      "workHistory": [
+        {"employer": "Acme Corp", "role": "Senior Backend Engineer", "from": "2021-03", "to": "present", "description": "Leads payments platform team."},
+        {"employer": "Beta Inc", "role": "Backend Engineer", "from": "Jan 2018", "to": "Feb 2021", "description": "Built billing services."}
+      ],
+      "schools": [
+        {"name": "UC Berkeley", "degree": "B.S.", "fieldOfStudy": "Computer Science", "graduationYear": "2017"}
+      ]
+    },
+    {
+      "id": "ats-002",
+      "contact": {"fullName": "", "emailAddr": "not-an-email"},
+      "resumeHeadline": null,
+      "workHistory": "garbage-not-a-list"
+    }
+  ]
+}

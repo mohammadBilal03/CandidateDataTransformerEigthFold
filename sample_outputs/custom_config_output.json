@@ -1,0 +1,97 @@
+[
+  {
+    "full_name": "Jane Doe",
+    "full_name__confidence": {
+      "source_field": "full_name",
+      "candidate_overall_confidence": 0.817
+    },
+    "primary_email": "jane.doe@example.com",
+    "primary_email__confidence": {
+      "source_field": "emails",
+      "candidate_overall_confidence": 0.817
+    },
+    "phone": "+14155550142",
+    "phone__confidence": {
+      "source_field": "phones",
+      "candidate_overall_confidence": 0.817
+    },
+    "skills": [
+      "python",
+      "go",
+      "kubernetes",
+      "postgresql",
+      "aws",
+      "distributed systems"
+    ],
+    "skills__confidence": {
+      "source_field": "skills",
+      "candidate_overall_confidence": 0.817
+    }
+  },
+  {
+    "full_name": "John Smith",
+    "full_name__confidence": {
+      "source_field": "full_name",
+      "candidate_overall_confidence": 0.88
+    },
+    "primary_email": null,
+    "primary_email__confidence": {
+      "source_field": "emails",
+      "candidate_overall_confidence": 0.88
+    },
+    "phone": "+12125559981",
+    "phone__confidence": {
+      "source_field": "phones",
+      "candidate_overall_confidence": 0.88
+    },
+    "skills": null,
+    "skills__confidence": {
+      "source_field": "skills",
+      "candidate_overall_confidence": 0.88
+    }
+  },
+  {
+    "full_name": null,
+    "full_name__confidence": {
+      "source_field": "full_name",
+      "candidate_overall_confidence": 0.0
+    },
+    "primary_email": null,
+    "primary_email__confidence": {
+      "source_field": "emails",
+      "candidate_overall_confidence": 0.0
+    },
+    "phone": null,
+    "phone__confidence": {
+      "source_field": "phones",
+      "candidate_overall_confidence": 0.0
+    },
+    "skills": null,
+    "skills__confidence": {
+      "source_field": "skills",
+      "candidate_overall_confidence": 0.0
+    }
+  },
+  {
+    "full_name": null,
+    "full_name__confidence": {
+      "source_field": "full_name",
+      "candidate_overall_confidence": 0.0
+    },
+    "primary_email": null,
+    "primary_email__confidence": {
+      "source_field": "emails",
+      "candidate_overall_confidence": 0.0
+    },
+    "phone": null,
+    "phone__confidence": {
+      "source_field": "phones",
+      "candidate_overall_confidence": 0.0
+    },
+    "skills": null,
+    "skills__confidence": {
+      "source_field": "skills",
+      "candidate_overall_confidence": 0.0
+    }
+  }
+]

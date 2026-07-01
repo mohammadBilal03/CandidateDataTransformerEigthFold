@@ -1,0 +1,11 @@
+{
+  "fields": [
+    { "path": "candidate_name", "from": "full_name", "type": "string", "required": true },
+    { "path": "contact.email", "from": "emails[0]", "type": "string" },
+    { "path": "contact.country", "from": "location.country", "type": "string" },
+    { "path": "top_skills", "from": "skills[].name", "type": "string[]", "normalize": "canonical" },
+    { "path": "github_url", "from": "links.github", "type": "string" }
+  ],
+  "include_confidence": false,
+  "on_missing": "omit"
+}

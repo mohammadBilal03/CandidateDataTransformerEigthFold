@@ -1,0 +1,463 @@
+[
+  {
+    "candidate_id": "11034c81-c12a-4e44-a7ee-981787315914",
+    "full_name": "Jane Doe",
+    "emails": [
+      "jane.doe@example.com",
+      "jdoe.alt@gmail.com"
+    ],
+    "phones": [
+      "+14155550142"
+    ],
+    "location": {
+      "city": "San Francisco",
+      "region": "California",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Senior Backend Engineer | Distributed Systems | Payments",
+    "years_experience": 8,
+    "skills": [
+      {
+        "name": "python",
+        "confidence": 0.81,
+        "sources": [
+          "linkedin",
+          "resume"
+        ]
+      },
+      {
+        "name": "go",
+        "confidence": 0.81,
+        "sources": [
+          "linkedin",
+          "resume"
+        ]
+      },
+      {
+        "name": "kubernetes",
+        "confidence": 0.81,
+        "sources": [
+          "linkedin",
+          "resume"
+        ]
+      },
+      {
+        "name": "postgresql",
+        "confidence": 0.81,
+        "sources": [
+          "linkedin",
+          "resume"
+        ]
+      },
+      {
+        "name": "aws",
+        "confidence": 0.66,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "distributed systems",
+        "confidence": 0.45,
+        "sources": [
+          "linkedin"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "start": "2021-03",
+        "company": "Acme Corp",
+        "end": "present",
+        "summary": "Leads the payments platform team.",
+        "title": "Senior Backend Engineer"
+      },
+      {
+        "start": "2018-01",
+        "company": "Beta Inc",
+        "end": "2021-02",
+        "summary": "Owned billing microservices.",
+        "title": "Backend Engineer"
+      }
+    ],
+    "education": [
+      {
+        "field": "Computer Science",
+        "end_year": "2017-01",
+        "degree": "B.S. Computer Science",
+        "institution": "UC Berkeley"
+      }
+    ],
+    "provenance": [
+      {
+        "field": "emails",
+        "value": "jane.doe@example.com",
+        "source": "recruiter_csv",
+        "method": "csv_column:email"
+      },
+      {
+        "field": "emails",
+        "value": "jane.doe@example.com",
+        "source": "ats_json",
+        "method": "ats_key:contact.emailAddr"
+      },
+      {
+        "field": "emails",
+        "value": "jane.doe@example.com",
+        "source": "resume",
+        "method": "regex:email"
+      },
+      {
+        "field": "emails",
+        "value": "jane.doe@example.com",
+        "source": "notes",
+        "method": "regex:email"
+      },
+      {
+        "field": "emails",
+        "value": "jdoe.alt@gmail.com",
+        "source": "notes",
+        "method": "regex:email"
+      },
+      {
+        "field": "phones",
+        "value": "+14155550142",
+        "source": "recruiter_csv",
+        "method": "csv_column:phone"
+      },
+      {
+        "field": "phones",
+        "value": "+14155550142",
+        "source": "ats_json",
+        "method": "ats_key:contact.mobileNo"
+      },
+      {
+        "field": "phones",
+        "value": "+14155550142",
+        "source": "resume",
+        "method": "regex:phone"
+      },
+      {
+        "field": "phones",
+        "value": "+14155550142",
+        "source": "notes",
+        "method": "regex:phone"
+      },
+      {
+        "field": "full_name",
+        "value": "Jane Doe",
+        "source": "recruiter_csv",
+        "method": "csv_column:name"
+      },
+      {
+        "field": "headline",
+        "value": "Senior Backend Engineer | Distributed Systems | Payments",
+        "source": "linkedin",
+        "method": "export:headline"
+      },
+      {
+        "field": "years_experience",
+        "value": 8,
+        "source": "linkedin",
+        "method": "export:years_experience"
+      },
+      {
+        "field": "location.city",
+        "value": "San Francisco",
+        "source": "linkedin",
+        "method": "export:location"
+      },
+      {
+        "field": "location.region",
+        "value": "California",
+        "source": "linkedin",
+        "method": "export:location"
+      },
+      {
+        "field": "location.country",
+        "value": "US",
+        "source": "linkedin",
+        "method": "export:location"
+      },
+      {
+        "field": "links.linkedin",
+        "value": "https://www.linkedin.com/in/janedoe",
+        "source": "linkedin",
+        "method": "export:url"
+      },
+      {
+        "field": "links.github",
+        "value": "https://github.com/janedoe",
+        "source": "resume",
+        "method": "regex:github_url"
+      },
+      {
+        "field": "skills",
+        "value": "python",
+        "source": "linkedin",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "python",
+        "source": "resume",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "go",
+        "source": "linkedin",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "go",
+        "source": "resume",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "kubernetes",
+        "source": "linkedin",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "kubernetes",
+        "source": "resume",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "postgresql",
+        "source": "linkedin",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "postgresql",
+        "source": "resume",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "aws",
+        "source": "resume",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "distributed systems",
+        "source": "linkedin",
+        "method": "merged"
+      },
+      {
+        "field": "experience",
+        "value": "Acme Corp / Senior Backend Engineer",
+        "source": "ats_json",
+        "method": "ats_key:workhistory[]"
+      },
+      {
+        "field": "experience",
+        "value": "Acme Corp / Senior Backend Engineer",
+        "source": "linkedin",
+        "method": "export:experience[]"
+      },
+      {
+        "field": "experience",
+        "value": "Beta Inc / Backend Engineer",
+        "source": "ats_json",
+        "method": "ats_key:workhistory[]"
+      },
+      {
+        "field": "experience",
+        "value": "Beta Inc / Backend Engineer",
+        "source": "linkedin",
+        "method": "export:experience[]"
+      },
+      {
+        "field": "education",
+        "value": "UC Berkeley",
+        "source": "ats_json",
+        "method": "ats_key:schools[]"
+      },
+      {
+        "field": "education",
+        "value": "UC Berkeley",
+        "source": "linkedin",
+        "method": "export:education[]"
+      }
+    ],
+    "overall_confidence": 0.817
+  },
+  {
+    "candidate_id": "959ce62f-d68e-4541-9ef9-4134d991d5d4",
+    "full_name": "John Smith",
+    "emails": [],
+    "phones": [
+      "+12125559981"
+    ],
+    "location": null,
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [
+      {
+        "field": "phones",
+        "value": "+12125559981",
+        "source": "recruiter_csv",
+        "method": "csv_column:phone"
+      },
+      {
+        "field": "full_name",
+        "value": "John Smith",
+        "source": "recruiter_csv",
+        "method": "csv_column:name"
+      }
+    ],
+    "overall_confidence": 0.88
+  },
+  {
+    "candidate_id": "3db2134f-12be-4c08-8230-d727de4b97d9",
+    "full_name": null,
+    "emails": [],
+    "phones": [],
+    "location": null,
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [],
+    "overall_confidence": 0.0
+  },
+  {
+    "candidate_id": "e98b26a9-593d-46f5-8315-848300ed488c",
+    "full_name": null,
+    "emails": [],
+    "phones": [],
+    "location": null,
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [],
+    "experience": [],
+    "education": [],
+    "provenance": [],
+    "overall_confidence": 0.0
+  },
+  {
+    "candidate_id": "26abca56-6254-4482-be8d-e4132e286dfc",
+    "full_name": "The Octocat",
+    "emails": [],
+    "phones": [],
+    "location": {
+      "city": "San Francisco",
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": "https://github.com/octocat",
+      "portfolio": "https://github.blog",
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "ruby",
+        "confidence": 0.51,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "html",
+        "confidence": 0.51,
+        "sources": [
+          "github"
+        ]
+      },
+      {
+        "name": "css",
+        "confidence": 0.51,
+        "sources": [
+          "github"
+        ]
+      }
+    ],
+    "experience": [],
+    "education": [],
+    "provenance": [
+      {
+        "field": "full_name",
+        "value": "The Octocat",
+        "source": "github",
+        "method": "api:name"
+      },
+      {
+        "field": "location.city",
+        "value": "San Francisco",
+        "source": "github",
+        "method": "api:location"
+      },
+      {
+        "field": "links.github",
+        "value": "https://github.com/octocat",
+        "source": "github",
+        "method": "derived:url"
+      },
+      {
+        "field": "links.portfolio",
+        "value": "https://github.blog",
+        "source": "github",
+        "method": "api:blog"
+      },
+      {
+        "field": "skills",
+        "value": "ruby",
+        "source": "github",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "html",
+        "source": "github",
+        "method": "merged"
+      },
+      {
+        "field": "skills",
+        "value": "css",
+        "source": "github",
+        "method": "merged"
+      }
+    ],
+    "overall_confidence": 0.462
+  }
+]

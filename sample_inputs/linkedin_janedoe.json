@@ -1,0 +1,15 @@
+{
+  "name": "Jane Doe",
+  "headline": "Senior Backend Engineer | Distributed Systems | Payments",
+  "location": "San Francisco, California, United States",
+  "public_url": "https://www.linkedin.com/in/janedoe",
+  "years_experience": 8,
+  "experience": [
+    {"company": "Acme Corp", "title": "Senior Backend Engineer", "start": "March 2021", "end": "present", "summary": "Leads the payments platform team."},
+    {"company": "Beta Inc", "title": "Backend Engineer", "start": "2018-01", "end": "2021-02", "summary": "Owned billing microservices."}
+  ],
+  "education": [
+    {"school": "UC Berkeley", "degree": "B.S. Computer Science", "field": "Computer Science", "end_year": "2017"}
+  ],
+  "skills": ["Python", "Go", "Kubernetes", "PostgreSQL", "Distributed Systems"]
+}

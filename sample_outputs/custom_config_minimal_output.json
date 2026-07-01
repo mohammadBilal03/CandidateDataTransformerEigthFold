@@ -1,0 +1,23 @@
+[
+  {
+    "candidate_name": "Jane Doe",
+    "contact": {
+      "email": "jane.doe@example.com",
+      "country": "US"
+    },
+    "top_skills": [
+      "python",
+      "go",
+      "kubernetes",
+      "postgresql",
+      "aws",
+      "distributed systems"
+    ],
+    "github_url": "https://github.com/janedoe"
+  },
+  {
+    "candidate_name": "John Smith"
+  },
+  {},
+  {}
+]
