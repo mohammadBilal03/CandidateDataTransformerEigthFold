@@ -2,7 +2,7 @@
 
 Turns messy, multi-source candidate data into one clean, canonical, provenance-tracked
 profile per candidate, with a runtime-configurable projection layer for custom output
-shapes. Implements the design in `<YourFullName>_<YourEmail>_Eightfold.pdf`.
+shapes. 
 
 ## Quick start
 
