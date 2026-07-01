@@ -4,12 +4,45 @@ Turns messy, multi-source candidate data into one clean, canonical, provenance-t
 profile per candidate, with a runtime-configurable projection layer for custom output
 shapes. 
 
-## Quick start
+## Setup
+
+First, clone the repository:
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/mohammadBilal03/CandidateDataTransformerEigthFold.git
+cd CandidateDataTransformerEigthFold
+```
 
-# Default schema, all sample sources
+Then install dependencies:
+
+**Windows (PowerShell):**
+```powershell
+python -m pip install -r requirements.txt
+```
+
+**Mac / Linux:**
+```bash
+pip install -r requirements.txt
+```
+
+## Quick start
+
+### Default schema — all sample sources
+
+**Windows (PowerShell):**
+```powershell
+python -m eightfold.cli `
+  --input sample_inputs\recruiter.csv `
+  --input sample_inputs\ats.json `
+  --input sample_inputs\linkedin_janedoe.json `
+  --input sample_inputs\resume_janedoe.pdf `
+  --input sample_inputs\notes_janedoe.txt `
+  --input https://github.com/octocat `
+  --out sample_outputs\default_schema_output.json
+```
+
+**Mac / Linux:**
+```bash
 python3 -m eightfold.cli \
   --input sample_inputs/recruiter.csv \
   --input sample_inputs/ats.json \
@@ -18,21 +51,72 @@ python3 -m eightfold.cli \
   --input sample_inputs/notes_janedoe.txt \
   --input https://github.com/octocat \
   --out sample_outputs/default_schema_output.json
+```
 
-# Same inputs, custom runtime config (subset/rename/normalize fields)
+### Custom runtime config — subset / rename / normalize fields
+
+**Windows (PowerShell):**
+```powershell
+python -m eightfold.cli `
+  --input sample_inputs\recruiter.csv `
+  --input sample_inputs\ats.json `
+  --input sample_inputs\linkedin_janedoe.json `
+  --input sample_inputs\resume_janedoe.pdf `
+  --input sample_inputs\notes_janedoe.txt `
+  --config sample_inputs\config_example.json `
+  --out sample_outputs\custom_config_output.json
+```
+
+**Mac / Linux:**
+```bash
 python3 -m eightfold.cli \
   --input sample_inputs/recruiter.csv \
   --input sample_inputs/ats.json \
   --input sample_inputs/linkedin_janedoe.json \
+  --input sample_inputs/resume_janedoe.pdf \
+  --input sample_inputs/notes_janedoe.txt \
   --config sample_inputs/config_example.json \
   --out sample_outputs/custom_config_output.json
 ```
 
-Output is the projected JSON array (one object per resolved candidate); run stats and
-per-record validation warnings print to stderr unless `--quiet` is passed.
+### Second custom config — different output shape, same engine
 
-Run tests: `python3 -m pytest tests/ -v` (27 tests covering normalizers, merge/identity
-resolution, and pipeline edge cases).
+**Windows (PowerShell):**
+```powershell
+python -m eightfold.cli `
+  --input sample_inputs\recruiter.csv `
+  --input sample_inputs\ats.json `
+  --input sample_inputs\linkedin_janedoe.json `
+  --config sample_inputs\config_minimal.json `
+  --out sample_outputs\custom_config_minimal_output.json
+```
+
+**Mac / Linux:**
+```bash
+python3 -m eightfold.cli \
+  --input sample_inputs/recruiter.csv \
+  --input sample_inputs/ats.json \
+  --input sample_inputs/linkedin_janedoe.json \
+  --config sample_inputs/config_minimal.json \
+  --out sample_outputs/custom_config_minimal_output.json
+```
+
+Output is a JSON array — one object per resolved candidate. Run stats and per-record
+validation warnings print to stderr unless `--quiet` is passed.
+
+### Run tests
+
+**Windows (PowerShell):**
+```powershell
+python -m pytest tests/ -v
+```
+
+**Mac / Linux:**
+```bash
+python3 -m pytest tests/ -v
+```
+
+29 tests covering normalizers, merge/identity resolution, and pipeline edge cases.
 
 ## Pipeline
 
@@ -82,10 +166,14 @@ repo languages — see the example `https://github.com/octocat` input above.
 
 ## Runtime config / custom output
 
-See `sample_inputs/config_example.json` for the exact example from the problem
-statement (rename via `from`, `E164`/`canonical` normalization, `include_confidence`,
-`on_missing: "null"`). `on_missing` also supports `"omit"` (drop the key) and `"error"`
+See sample_inputs/config_example.json for the exact example from the problem
+statement (rename via from, E164/canonical normalization, include_confidence,
+on_missing: "null"). on_missing also supports "omit" (drop the key) and "error"
 (fail validation for that record only — the rest of the batch still completes).
+
+See sample_inputs/config_minimal.json for a second config that produces a completely
+different output shape (nested fields, no confidence sidecars, on_missing: "omit") from
+the same inputs — demonstrating the "same engine, no code changes" requirement visually.
 
 ## Tests / edge cases covered
 
